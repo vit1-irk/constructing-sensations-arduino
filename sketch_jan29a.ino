@@ -142,7 +142,7 @@ B5, CS4, F4, AS5, AS4, FS5, p2, GS5, p2, AS5, p2, F5, p,
 FS5, DS4, FS4, AS4, B4, p, DS5, F5, FS5, p2, AS5, p2, B5, p,
 B5, GS3, B3, DS4, FS4, p, DS5, F5, FS5, p2, AS5, p2, F6, p,
 F6, CS4, F4, GS4, B4, p, F5, FS5, GS5, p2, AS6, p2, B6, p,
-B6, FS3, AS3, AS6, FS4, GS6, p, GS6, p2, FS6, p2, F6, p,
+B6, FS3, AS3, AS6, p, FS4, GS6, p, GS6, p2, FS6, p2, F6, p,
 
 GS6, AS3, D4, F4, GS3, AS3, D4, F4, GS3, AS3, D4, F4, GS3, AS3, D4, F4,
 GS2, B3, DS4, FS4, GS3, B3, DS4, FS4, GS3, B3, DS4, FS4, GS3, B3, DS4, FS4,
@@ -170,7 +170,7 @@ FS4, AS2, FS3, F4, AS2, AS3, DS5, CS4, CS6, AS2, FS3, C6, AS2, AS3, FS6, CS4,
 F6, AS2, F3, FS6, AS2, A3, C6, C4, CS5, AS2, F3, DS4, AS2, A3, F4, C4,
 C6, CS6, DS6, FS6, AS2, A3, C6, C4, CS5, AS2, F3, DS4, AS2, A3, F4, C4,
 AS5, C6, CS6, FS6, AS2, AS3, C6, AS3, CS5, AS2, AS3, DS4, AS2, AS3, F4, AS3,
-CS4, AS2, AS3, C4, AS2, AS3, DS5, AS3, CS6, AS2, AS3, C6, AS2, AS3, FS6,
+CS4, AS2, AS3, C4, AS2, AS3, DS5, AS3, CS6, AS2, AS3, C6, AS2, AS3, FS6, AS3,
 
 FS6, AS3, F5, AS2, AS3, FS5, AS2, AS3, GS5, AS2, AS3, AS5, AS2, AS3, B5, AS2,
 B5, B3, DS5, GS2, B3, F5, GS2, B3, FS5, GS2, B4, AS5, GS2, B3, B5, GS2,
@@ -306,10 +306,9 @@ void setup() {
   melodyDurations(melody7, durations7, sizeof(melody7));
   notelength*=2; notelength += pauseBetweenNotes;
   melodyProgression(melody8, sizeof(melody8));
-  
+
   notelength -= pauseBetweenNotes; notelength /=2;
   melodyProgression(melody9, sizeof(melody9));
-
   melodyDurations(melody10, durations10, sizeof(melody10));
   melodyProgression(melody11, sizeof(melody11));
 }
